@@ -1,0 +1,34 @@
+	/* element wise css*/		
+		div
+		{
+			background-color: yellow !important;
+		}
+		p
+		{
+			font-size: 24px;
+		}	
+		.cls /*class wise*/
+		{
+			color: blue;
+			background-color: #CCFFCC;	
+		}
+		#p2 /*ID wise*/
+		{
+			background-color: gray;
+		}
+
+		*,html,body
+		{
+			font-family: Tahoma;
+		}
+		div ul   /*  .cls .list //  #id .cls */
+		{
+			background-color: red;
+		}
+		div,p
+		{
+			color: red;
+		}
+
+
+	
