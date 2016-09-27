@@ -23,9 +23,7 @@ if(isset($_FILES['upload']))
 		//./upload/koala2.jpg
 
 	}
-
 	move_uploaded_file($tmp_name,$savepath );
-	
  }
  ?>
 
