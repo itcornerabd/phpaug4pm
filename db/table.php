@@ -8,7 +8,7 @@
 
 
 	<?php 
-		$query = "SELECT * FROM movies ";
+		$query = "select m.id , m.name, m.cast , c.name as categoryname from movies as m  , category as c where 	m.categoryid = c.id	 ";
 
 		$result = mysqli_query($con,$query); 
 
@@ -28,7 +28,7 @@
 		<tr>
 			<td> <?=$rs['id']?> </td>
 			<td> <?=$rs['name']?> </td>
-			<td> <?=$rs['categoryid']?> </td>
+			<td> <?=$rs['categoryname']?> </td>
 			<td> <?=$rs['cast']?> </td>
 		</tr>
 	<?php 		
