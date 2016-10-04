@@ -2,6 +2,29 @@
 
 <?php 
 	var_dump($_POST);
+	if(isset($_POST['name']) )
+	{
+		$name = $_POST['name'];
+		$cast =$_POST['cast'];
+		$categoryid	=$_POST['categoryid'];
+		$plot=$_POST['plot'];
+
+		if(!empty($name)) 
+		{
+
+			$query = "insert into movies (name,categoryid,cast, plot) values('$name',$categoryid,'$cast','$plot') ";
+
+			$result = mysqli_query($con,$query);
+			if(!$result)
+			{
+				die("error in insertion".mysqli_error($con));
+			}
+			else
+			{
+				header("location:table.php");
+			}
+		}
+	}	
 
  ?>
 
