@@ -5,8 +5,14 @@
 	
 	if(isset($_POST['username']))
 	{
-		$username=$_POST['username'];
-		$password=$_POST['password'];
+
+		$username= str_replace("'", "''", $_POST['username']);
+		$password= str_replace("'", "''", $_POST['password']);
+
+
+		$username = mysqli_escape_string($con,$username);
+		$password = mysqli_escape_string($con,$password);
+		//pdo 
 
 
 		$query = "select * from login where username ='$username' and password = '$password' ";
