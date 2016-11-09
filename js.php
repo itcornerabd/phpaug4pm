@@ -17,6 +17,7 @@
 
 <input type="button" name="" id="btn1" value="btn1" onclick="btnclick()" >
 
+<input type="button" name="" id="btn2" value="btn2" onclick="btn2click()">
 
 <span id="span1">ads </span>
 
@@ -29,6 +30,11 @@
 
 
 <script type="text/javascript">
+function btn2click()
+{
+	
+	alert('button clicked');
+}
 	
 function btnclick()
 {
