@@ -19,7 +19,7 @@
 
 <a href="action.php?id=1&name=abc">click here</a>
 
-<form name="form" id="form1" method="POST" action="action.php">
+<form name="form" id="form1" method="POST" action="action.php" onsubmit=" return validate()">
 	<table align="center">
 		<tr>
 			<td>
@@ -28,7 +28,7 @@
 			 </label>
 			</td>
 			<td>
-				<input type="text" name="txtname" id="txtname" placeholder="Enter Your name"  size="10" required >
+				<input type="text" name="txtname" id="txtname" placeholder="Enter Your name"  size="10"   >
 				<!-- date number email -->
 			</td>
 		</tr>
@@ -79,10 +79,10 @@
 		<tr>
 			<td>Hobby</td>
 			<td>
-				<input type="checkbox" name="chkhobby[]" value="SPORTS"> Sports
-				<input type="checkbox" name="chkhobby[]" value="ARTS"> Art
-				<input type="checkbox" name="chkhobby[]" value="READING"> Reading
-				<input type="checkbox" name="chkhobby[]" value="Dancing"> Dancing
+				<input type="checkbox" name="chkhobby[]" id="chkhobby1" value="SPORTS"> Sports
+				<input type="checkbox" name="chkhobby[]" id="chkhobby2" value="ARTS"> Art
+				<input type="checkbox" name="chkhobby[]" id="chkhobby3" value="READING"> Reading
+				<input type="checkbox" name="chkhobby[]" id="chkhobby4" value="Dancing"> Dancing
 			</td>
 		</tr>
 
@@ -99,3 +99,10 @@
 
 </body>
 </html>	
+
+<script type="text/javascript" src="validate.js" ></script>
+
+
+
+
+
