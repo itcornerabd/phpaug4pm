@@ -36,8 +36,7 @@ function validate()
 				break;
 			}
 	}	
-	if(!chkflag)
-	{
+	if(!chkflag){
 		alert('please select atleast one hobby');
 		document.getElementById('chkhobby1').focus();
 		return false;
