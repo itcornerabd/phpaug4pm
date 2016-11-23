@@ -1,6 +1,4 @@
-   <?php include './include/constr.php'; ?>
-
-
+<?php include './include/constr.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
