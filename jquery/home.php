@@ -32,7 +32,9 @@
 			<li>
 				<a href="#" id="linkc">C</a>
 			</li>
-			<li>D</li>
+			<li>
+				<a href="#" id="linkd"> D </a>
+			</li>
 		</ul>	
 
 
@@ -79,6 +81,28 @@ $("#linkc").click(function(){
 		$("#words").html(response);
 	})
 })
+
+
+$("#linkd").click(function(){
+
+	$.getJSON('d.php',function(jsonresponse){
+
+		console.log(jsonresponse);	
+		var html  = ''; 
+		html = '<ul>';
+		$.each(jsonresponse , function(key,value) {
+			
+			 
+			 
+			html+= '<li> '+value.name+' </li>';
+		})
+		
+		html += '</ul>';
+		$("#words").html(html);
+	})
+
+})
+
 
 
 </script>
